@@ -62,7 +62,7 @@
 
 ## 效果图
 
-![image-20210312104248579](C:\Users\ljq\AppData\Roaming\Typora\typora-user-images\image-20210312104248579.png)
+![](https://gitee.com/formalization/schema_decomposition/raw/master/images/interface.png)
 
 ## 安装说明
 
