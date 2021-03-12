@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/mainStyle.css" />
+        <link rel="stylesheet" type="text/css" href="./css/lrtk.css" />
+		<script type="text/javascript" src="./js/DatabaseTool.js"></script>
+		<script type="text/javascript" src="./js/mainStyle.js"></script>
+        <script type="text/javascript" src="./js/jquery-1.3.2.js"></script>
+		<title></title>
+	</head>
+	<body onload="init(), document.all.inputBox.focus()">		
+        <div id="background">
+            <div id="navigation">
+                <div id="logo"><div></div></div>
+                <div id="information">
+                    <h1>基于Armstrong公理系统的自动模式分解工具</h1>
+                    <p>开发人员：李建清</p>
+                    <p>指导教师：蒋建民教授、赵卓宁教授</p>
+                    <p>单位：成都信息工程大学-软件自动生成与智能服务四川省重点实验室</p>
+                </div>
+            </div>
+            
+            <div id="Function">
+                <div id="box_palette">
+                    <div id="FunctionsList">
+                        <div class="cueText">功能按钮</div>
+                        <div class="subNavBox">
+                            <div class="subNav currentDd currentDt">计算闭包</div>
+                                <ul class="navContent " style="display:block">
+                                    <li><a onclick="closureAugmentPrint()">计算增广集</a></li>
+                                    <li><a onclick="closureTransitivePrint()">计算传递依赖</a></li>
+                                    <li><a onclick="closureInterface()">计算闭包</a></li>
+                                </ul>
+                            <div class="subNav">计算关键字</div>
+                                <ul class="navContent">
+                                    <li><a onclick="keyWordPrint()">计算主码</a></li>
+                                    <li><a onclick="candidateKeysInterface()">计算候选码</a></li>
+                                </ul>
+                            <div class="subNav">计算最小依赖</div>
+                                <ul class="navContent">
+                                    <li><a onclick="decomposeDependencePrint()">分解依赖</a></li>
+                                    <li><a onclick="reduceRedundantPrint()">去除多余依赖</a></li>
+                                    <li><a onclick="reduceExtraneousPrint()">去除多余属性</a></li>
+                                    <li><a onclick="reduceInterface()">计算最小依赖集</a></li>
+                                </ul>
+                            <div class="subNav">模式分解</div>
+                                <ul class="navContent">
+                                    <li><a onclick="decompose1NFPrint()">分解为2NF</a></li>
+                                    <li><a onclick="decompose2NFPrint()">分解为3NF</a></li>
+                                    <li><a onclick="decompose3NFPrint()">分解为BCNF</a></li>
+                                    <li><a onclick="patternDecomposeInterface()">分解过程展示</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="myText">
+                    <div class="cueText1">输入框</div>
+                    <div id="inputDiv"><input name="inputBox" id="inputBox" placeholder="请先在此输入F, 并选择左侧功能 (输入格式A->B, B->C, C->E)" /></div>
+                    <div class="cueText2">运算结果</div>
+                    <div id="showTextDiv">
+                        <textarea id="showText"></textarea>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
