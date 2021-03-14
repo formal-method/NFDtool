@@ -623,6 +623,7 @@ function decompose1NF(allDependenceArr) {
                                 tempArr[0].splice(j, 1);
                                 leftArr.splice(j, 1);
                                 rightArr.splice(j, 1);
+                                j--; //v1.0.0版本bug_1修复
                             }
                         }
                     }
