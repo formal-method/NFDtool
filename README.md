@@ -1,4 +1,4 @@
-# 基于Armstrong公理系统的自动模式分解工具
+# 模式分解工具-NF Decomposition Tool
 
 ------
 
