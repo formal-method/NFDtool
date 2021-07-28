@@ -570,7 +570,8 @@ function reduceExtraneousPrint() {
   let result = '';
 
   let allDependenceArr = allDependence(content);
-  let reduceRedundantArr = reduceRedundant(allDependenceArr);
+  let decomposeDependenceArr = decomposeDependence(allDependenceArr);
+  let reduceRedundantArr = reduceRedundant(decomposeDependenceArr);
   result = reduceExtraneous(reduceRedundantArr); 
   document.getElementById("showText").value ="【去除多余属性】\r结果为："+ result;
 }
